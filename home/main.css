@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(./images/jeremy-thomas-O6N9RV2rzX8-unsplash.jpg);
+  font-family: "Montserrat", sans-serif;
+}
+
+.body {
+  background-color: #936272;
+  margin: 5%;
+  height: auto;
+  border-radius: 0.5em;
+}
+
+header {
+  display: flex;
+  background-color: #cea0ae;
+  padding: 0.5em;
+  flex-direction: row;
+  place-content: space-between;
+  height: 2em;
+  border-radius: 0.5em 0.5em 0 0;
+}
+
+.logo {
+  margin: 0.2em;
+  height: 100%;
+  width: auto;
+  cursor: pointer;
+}
+
+.menu {
+  margin: auto auto auto 1.2em;
+  height: 1rem;
+  width: auto;
+  cursor: pointer;
+}
+
+.hi {
+  font-size: 1.2em;
+  margin-right: 1.2em;
+  cursor: pointer;
+}
+
+.menu-bar {
+  display: none;
+}
+
+.show-menu {
+  display: block;
+  padding: 1em;
+  line-height: 2em;
+  position: absolute;
+  z-index: 999;
+  background-color: #cea0ae;
+  font-size: 2em;
+  margin: 0.5em;
+  width: 8em;
+  border-radius: 0.5em;
+}
+
+.show-menu li {
+  list-style-type: none;
+}
+
+.menu-bar li a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu-bar li:hover {
+  font-weight: bold;
+}
+
+.closeImg {
+  display: block;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  height: 1em;
+  width: auto;
+  cursor: pointer;
+}
+
+.closeImg:hover {
+  top: 0.95em;
+  right: 0.95em;
+  height: 1.1em;
+  width: auto;
+}
+
+.hero {
+  margin: 5em;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+  width: auto;
+  height: 30em;
+}
+
+.profilepicture {
+  margin: 1em;
+  height: auto;
+  width: 100%;
+}
+
+.text {
+  display: block;
+  text-align: center;
+  padding: 1em;
+  margin: 1em;
+  background-color: #d8edd4;
+  border-radius: 1em;
+  height: auto;
+  width: 30em;
+  margin-left: 4em;
+  box-shadow: 0.3em 0.3em 0.5em black;
+}
+
+footer {
+  height: 0.01em;
+}
