@@ -6,12 +6,22 @@ body {
   box-sizing: border-box;
   background-image: url(./images/jeremy-thomas-O6N9RV2rzX8-unsplash.jpg);
   font-family: "Montserrat", sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 .body {
   background-color: #936272;
-  margin: 5%;
-  height: auto;
+  margin: auto;
+  width: fit-content;
+  margin-top: 5em;
+  margin-bottom: auto;
   border-radius: 0.5em;
 }
 
@@ -25,10 +35,15 @@ header {
   border-radius: 0.5em 0.5em 0 0;
 }
 
-.logo {
+.social {
   margin: 0.2em;
-  height: 100%;
+  display: flex;
   width: auto;
+}
+
+.logo {
+  height: 100%;
+  margin-left: 0.5em;
   cursor: pointer;
 }
 
@@ -81,7 +96,6 @@ header {
   top: 1em;
   right: 1em;
   height: 1em;
-  width: auto;
   cursor: pointer;
 }
 
@@ -89,40 +103,104 @@ header {
   top: 0.95em;
   right: 0.95em;
   height: 1.1em;
-  width: auto;
 }
 
 .hero {
+  width: 50em;
   margin: 5em;
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  margin: 2em;
-  width: auto;
-  height: 30em;
-}
-
-.profilepicture {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  grid-gap: 2em;
   margin: 1em;
-  height: auto;
-  width: 100%;
 }
 
-.text {
-  display: block;
+.container > li {
+  background-color: #cea0ae;
+  border-radius: 0.5em;
+  list-style-type: none;
+  text-align: center;
+  text-decoration: none;
+  padding: 3%;
+}
+
+.profilepic {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 0.5em;
+  box-shadow: 0.3em 0.3em 0.5em black;
+}
+
+.textBlock {
   text-align: center;
   padding: 1em;
-  margin: 1em;
   background-color: #d8edd4;
   border-radius: 1em;
-  height: auto;
-  width: 30em;
-  margin-left: 4em;
   box-shadow: 0.3em 0.3em 0.5em black;
+}
+
+.fullBlock {
+  width: 50em;
+  padding: 1em;
+  margin: 4.8em;
+  border: 0.2em solid black;
+  border-radius: 0.5em;
+}
+
+.experience {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1em;
+}
+
+.experience img {
+  max-width: 15em;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.description {
+  padding: 0.5em;
+  margin: auto;
 }
 
 footer {
   height: 0.01em;
+}
+
+ul {
+  text-align: left;
+}
+
+@media only screen and (max-width: 1025px) {
+  .body {
+    width: 95%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+
+  .hero {
+    width: auto;
+    margin: 3em;
+  }
+
+  .fullBlock {
+    width: auto;
+    margin: 3em;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .experience {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .experience img {
+    max-width: 15em;
+    aspect-ratio: 1/1;
+  }
 }
