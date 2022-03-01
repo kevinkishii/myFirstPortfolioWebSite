@@ -61,10 +61,6 @@ header {
 }
 
 .menu-bar {
-  display: none;
-}
-
-.show-menu {
   display: block;
   padding: 1em;
   line-height: 2em;
@@ -75,6 +71,8 @@ header {
   margin: 0.5em;
   width: 8em;
   border-radius: 0.5em;
+  visibility: hidden;
+  transition: width 2s ease-in-out;
 }
 
 .show-menu li {
